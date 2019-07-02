@@ -10,7 +10,7 @@ package 'git' do
 	action :install
 end
 
-package 'vim' do
+package 'curl' do
 	action :install
 end
 
