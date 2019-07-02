@@ -15,9 +15,7 @@ package 'curl' do
 end
 
 
-file '/etc/motd' do
-	content 'This is a test file'
-	owner 'osboxes'
-	group 'root'
-	mode '0644'
+template '/etc/motd' do
+	source 'motd.erb'
+	action :create
 end
